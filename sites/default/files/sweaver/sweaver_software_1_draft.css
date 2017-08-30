@@ -1,0 +1,22 @@
+#main-menu ul {
+  background-color: #37781d;
+}
+
+#copyright p {
+  color: #241a24;
+}
+
+p a {
+  font-size: 1px;
+  color: #cf063f;
+}
+
+a img {
+  text-align: left;
+  height: 112px;
+}
+
+.menu_wrapper #main-menu {
+  text-align: center;
+}
+
