@@ -1,0 +1,5 @@
+name = Facts
+description = Hobo Facts
+package = Epicodus Examples
+core = 7.x
+files[] = facts.module

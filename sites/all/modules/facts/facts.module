@@ -1,0 +1,20 @@
+<?php
+  function facts_menu() {
+    $items = array();
+    $items['facts'] = array(
+      'title' => 'Hobo Facts',
+      'page callback' => 'hobo_facts',
+      'access callback' => TRUE,
+      'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+  }
+  function hobo_facts(){
+    return '
+    <ul>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
+    ';
+  }

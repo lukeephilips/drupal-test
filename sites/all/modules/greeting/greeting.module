@@ -1,0 +1,30 @@
+<?php
+  function greeting_menu() {
+    $items = array();
+    $items['sup_cheese'] = array(
+      'title' => 'sup cheesius',
+      'page callback' => 'say_hi',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK,
+    );
+    $items['bye'] = array(
+      'title' => 'later gator',
+      'page callback' => 'peace_out',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK,
+    );
+    return $items;
+  }
+
+  function say_hi() {
+    return '<p>Sup Cheesius</p>';
+  }
+  function peace_out() {
+    return '<p>smell ya later</p>';
+  }
+  function greeting_user_login() {
+    $_GET['destination'] = 'sup_cheese';
+  }
+  function greeting_user_logout() {
+    $_GET['destination'] = 'bye';
+  }
