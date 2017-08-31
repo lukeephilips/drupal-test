@@ -1,0 +1,5 @@
+name = Sum
+description = add some shit.
+package = Epicodus Examples
+core = 7.x
+files[] = greeting.module

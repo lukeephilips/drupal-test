@@ -22,7 +22,12 @@
   function peace_out() {
     return '<p>smell ya later</p>';
   }
-  function greeting_user_login() {
+  function greeting_user_login(&$edit, $account) {
+
+    echo '<pre>';
+    var_dump($edit);
+    echo '</pre>';
+
     $_GET['destination'] = 'sup_cheese';
   }
   function greeting_user_logout() {
